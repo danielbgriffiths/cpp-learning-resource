@@ -1,13 +1,5 @@
-//
-//  reverse_array.cpp
-//  cpp-algoriths-datastructures
-//
-//  Created by Daniel Griffiths on 1/18/24.
-//
-
-#include "reverse_array.hpp"
+#include "reverse-array.hpp"
 #include <vector>
-#include <iostream>
 
 /*
  * Create function that reverses an array
@@ -19,10 +11,10 @@
 std::vector<int> execute(std::vector<int> list) {
     std::vector<int> next_list;
     
-    double length = sizeof(list) / sizeof(int);
+    int list_length = static_cast<int>(list.size());
     
-    for (int i = 0; i < length; i++) {
-        int reflected_index = length - i - 1;
+    for (int i = 0; i < list_length; i++) {
+        int reflected_index = list_length - i - 1;
         next_list.push_back(list[reflected_index]);
     }
         
