@@ -1,12 +1,14 @@
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.26)
 project(cpp_learning_resource)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-include_directories(.)
+add_executable(main_exec main.cpp) # executable target
 
-add_executable(cpp_learning_resource
-        cpp-learning-resource/main.cpp
-        cpp-learning-resource/algorithms/reverse-array/reverse-array.cpp
-        cpp-learning-resource/algorithms/reverse-array/reverse-array.hpp
-        cpp-learning-resource/algorithms/reverse-array/reverse-array.test.cpp)
+include_directories(libs-algorithms)
+add_subdirectory(libs-algorithms)
+
+target_link_libraries(main_exec libs-algorithms) # main_exec (target) linked-to libs-algorithms (item)
+# SEE: ... library type is dissimilar in that it is generally not linked to -- it is not used in the right-hand-side of the target_link_libraries() ...
+
+add_subdirectory(Google_tests)
