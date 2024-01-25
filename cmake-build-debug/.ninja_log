@@ -1,0 +1,13 @@
+# ninja log v5
+1	723	1706150669266745517	libs/algorithms/CMakeFiles/algorithms_lib.dir/reverse-array.cpp.o	9cd6f45d5f135590
+731	805	1706150669357734000	libs/algorithms/libalgorithms_lib.a	662c3a5b71140f37
+1	962	1706150669507502615	src/CMakeFiles/main_exec.dir/main.cpp.o	109a8eb07e568c2b
+962	1042	1706150669591734052	src/main_exec	a1e655215da04354
+5	1382	1706150686143556453	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	7d87b9eb77991736
+4	1440	1706150686201727057	tests/CMakeFiles/unit_test_exec.dir/reverse-array.test.cpp.o	437f9327315c5e43
+5	3608	1706150688362247804	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	b4480c3afee3ab89
+3609	3714	1706150688485193000	lib/libgtest.a	1612848d77d51d04
+3714	3768	1706150688539903000	lib/libgtest_main.a	67c7a89bbb19b2a5
+3768	4024	1706150688795087747	tests/unit_test_exec	23cf9f34848eb37f
+3768	4024	1706150688795087747	tests/unit_test_exec[1]_tests.cmake	23cf9f34848eb37f
+3768	4024	1706150688795087747	/Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/cmake-build-debug/tests/unit_test_exec[1]_tests.cmake	23cf9f34848eb37f

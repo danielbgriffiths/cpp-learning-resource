@@ -1,0 +1,5 @@
+if(EXISTS "/Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/cmake-build-debug/tests/unit_test_exec[1]_tests.cmake")
+  include("/Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/cmake-build-debug/tests/unit_test_exec[1]_tests.cmake")
+else()
+  add_test(unit_test_exec_NOT_BUILT unit_test_exec_NOT_BUILT)
+endif()
