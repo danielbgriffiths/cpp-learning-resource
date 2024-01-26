@@ -626,6 +626,13 @@ build libs/algorithms/CMakeFiles/algorithms_lib.dir/reverse-array.cpp.o: CXX_COM
   OBJECT_DIR = libs/algorithms/CMakeFiles/algorithms_lib.dir
   OBJECT_FILE_DIR = libs/algorithms/CMakeFiles/algorithms_lib.dir
 
+build libs/algorithms/CMakeFiles/algorithms_lib.dir/sum-of-sub-arrays.cpp.o: CXX_COMPILER__algorithms_lib_unscanned_Debug /Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/libs/algorithms/sum-of-sub-arrays.cpp || cmake_object_order_depends_target_algorithms_lib
+  DEP_FILE = libs/algorithms/CMakeFiles/algorithms_lib.dir/sum-of-sub-arrays.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/include/algorithms
+  OBJECT_DIR = libs/algorithms/CMakeFiles/algorithms_lib.dir
+  OBJECT_FILE_DIR = libs/algorithms/CMakeFiles/algorithms_lib.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target algorithms_lib
@@ -634,7 +641,7 @@ build libs/algorithms/CMakeFiles/algorithms_lib.dir/reverse-array.cpp.o: CXX_COM
 #############################################
 # Link the static library libs/algorithms/libalgorithms_lib.a
 
-build libs/algorithms/libalgorithms_lib.a: CXX_STATIC_LIBRARY_LINKER__algorithms_lib_Debug libs/algorithms/CMakeFiles/algorithms_lib.dir/reverse-array.cpp.o
+build libs/algorithms/libalgorithms_lib.a: CXX_STATIC_LIBRARY_LINKER__algorithms_lib_Debug libs/algorithms/CMakeFiles/algorithms_lib.dir/reverse-array.cpp.o libs/algorithms/CMakeFiles/algorithms_lib.dir/sum-of-sub-arrays.cpp.o
   ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = libs/algorithms/CMakeFiles/algorithms_lib.dir
@@ -856,6 +863,13 @@ build tests/CMakeFiles/unit_test_exec.dir/reverse-array.test.cpp.o: CXX_COMPILER
   OBJECT_DIR = tests/CMakeFiles/unit_test_exec.dir
   OBJECT_FILE_DIR = tests/CMakeFiles/unit_test_exec.dir
 
+build tests/CMakeFiles/unit_test_exec.dir/sum-of-sub-arrays.test.cpp.o: CXX_COMPILER__unit_test_exec_unscanned_Debug /Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/tests/sum-of-sub-arrays.test.cpp || cmake_object_order_depends_target_unit_test_exec
+  DEP_FILE = tests/CMakeFiles/unit_test_exec.dir/sum-of-sub-arrays.test.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/include/algorithms -isystem /Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/danielgriffiths/Desktop/cpp/cpp-learning-resource/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = tests/CMakeFiles/unit_test_exec.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/unit_test_exec.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target unit_test_exec
@@ -864,7 +878,7 @@ build tests/CMakeFiles/unit_test_exec.dir/reverse-array.test.cpp.o: CXX_COMPILER
 #############################################
 # Link the executable tests/unit_test_exec
 
-build tests/unit_test_exec tests/unit_test_exec[1]_tests.cmake | ${cmake_ninja_workdir}tests/unit_test_exec[1]_tests.cmake: CXX_EXECUTABLE_LINKER__unit_test_exec_Debug tests/CMakeFiles/unit_test_exec.dir/reverse-array.test.cpp.o | libs/algorithms/libalgorithms_lib.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libs/algorithms/libalgorithms_lib.a
+build tests/unit_test_exec tests/unit_test_exec[1]_tests.cmake | ${cmake_ninja_workdir}tests/unit_test_exec[1]_tests.cmake: CXX_EXECUTABLE_LINKER__unit_test_exec_Debug tests/CMakeFiles/unit_test_exec.dir/reverse-array.test.cpp.o tests/CMakeFiles/unit_test_exec.dir/sum-of-sub-arrays.test.cpp.o | libs/algorithms/libalgorithms_lib.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libs/algorithms/libalgorithms_lib.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   LINK_LIBRARIES = libs/algorithms/libalgorithms_lib.a  lib/libgtest_main.a  lib/libgtest.a
   OBJECT_DIR = tests/CMakeFiles/unit_test_exec.dir

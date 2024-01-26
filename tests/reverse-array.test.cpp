@@ -1,9 +1,12 @@
 #include <gtest/gtest.h>
 #include "reverse-array.hpp"
-#include <iostream>
+#include <vector>
 
 
-TEST(ReverseArrayTestSuite, StatusCheck){
-EXPECT_EQ(31,31);
-std::cout << "Test Running";
+TEST(ReverseArrayTestSuite, StatusCheck) {
+    std::vector<int> value = {1, 2, 3};
+    std::vector<int> expected = {3, 2, 1};
+    std::vector<int> result = reverse_array_memory(value);
+    EXPECT_EQ(result, expected);
 }
+
