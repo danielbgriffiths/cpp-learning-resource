@@ -4,6 +4,6 @@
 #include <cstdio>
 #include <vector>
 
-std::vector<int> sum_of_sub_arrays(std::vector<int> list);
+int sum_of_sub_arrays(std::vector<int> list);
 
 #endif /* sum_of_sub_arrays_hpp */
